@@ -1,6 +1,5 @@
 import random
-u=True
-def game(u): 
+def game(): 
     user=input("enter rock or paper or scissor : ")
     ch=["rock","paper","scissor"]
     comp=random.choice(ch) 
@@ -22,9 +21,9 @@ def game(u):
         print("Win")
     a=input("If you want to play type yes other wise no : ")
     if a=="yes":
-        game(u)
+        game()
     elif a=="no":
         print("game end")
-game(u)
+game()
 
 
